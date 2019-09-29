@@ -1,0 +1,12 @@
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.MODEL\bin\Debug\Project.MODEL.dll
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.MODEL\bin\Debug\Project.MODEL.pdb
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.MODEL\obj\Debug\Project.MODEL.csprojAssemblyReference.cache
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.MODEL\obj\Debug\Project.MODEL.csproj.CoreCompileInputs.cache
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.MODEL\obj\Debug\Project.MODEL.dll
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.MODEL\obj\Debug\Project.MODEL.pdb
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.MODEL\bin\Debug\Project.MODEL.dll
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.MODEL\bin\Debug\Project.MODEL.pdb
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.MODEL\obj\Debug\Project.MODEL.csprojAssemblyReference.cache
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.MODEL\obj\Debug\Project.MODEL.csproj.CoreCompileInputs.cache
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.MODEL\obj\Debug\Project.MODEL.dll
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.MODEL\obj\Debug\Project.MODEL.pdb

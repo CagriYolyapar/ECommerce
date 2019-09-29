@@ -1,0 +1,106 @@
+﻿@using PagedList
+@using PagedList.Mvc
+@model Tuple<IPagedList<Product>, List<Category>>
+@{
+    ViewBag.Title = "GetByCategory";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2 style="color:red">@Model.Item1[0].Category.CategoryName</h2>
+
+
+
+
+@section Kategoriler{
+    @foreach (Category item in Model.Item2)
+    {
+
+        if (item.ID == Model.Item1[0].CategoryID)
+        {
+            <li>
+                @Html.ActionLink(item.CategoryName, "GetByCategory", new { item.ID }, new { @class = "btn btn-primary", style = "background-color:aquamarine" })
+            </li>
+
+        }
+        else
+        {
+            <li>
+                @Html.ActionLink(item.CategoryName, "GetByCategory", new { item.ID }, new { @class = "btn btn-primary" })
+            </li>
+
+        }
+
+
+
+    }
+
+}
+
+            <div id="OzelUrunler">
+
+                <div style="float:right">
+                    @Html.PagedListPager(Model.Item1, page => Url.Action("GetByCategory", new { page, id = Model.Item1.First().CategoryID }))
+                </div> <br /> <br /> <br /> <br /> <br />
+
+                <div class="row product-list">
+                    @foreach (Product item in Model.Item1)
+                    {
+                        <div class="col-md-4">
+                            <section class="panel">
+                                <div class="pro-img-box">
+
+                                    <img src="~/Pictures/55736533_2073213799392633_2182034688506331136_n.png" />
+
+                                    <a href="@Url.Action("AddToCart","Member",new {id=item.ID })" class="adtocart">
+                                        <i class="icon-shopping-cart"></i>
+                                    </a>
+                                </div>
+                                <div class="panel-body text-center">
+                                    <h4>
+                                        <a href="#" class="pro-title">
+                                            @item.ProductName
+                                        </a>
+                                    </h4>
+                                    <p class="price">$@item.UnitPrice</p>
+                                </div>
+                            </section>
+                        </div>
+                    }
+
+
+                </div>
+                <div style="float:right">
+                    @Html.PagedListPager(Model.Item1, page => Url.Action("GetByCategory", new { page, id = Model.Item1.First().CategoryID }))
+                </div> <br /> <br /> <br /> <br /> <br />
+            </div>
+
+
+<script>
+    $(function () {
+        $("#slider-range a").mouseup(function () {
+
+            var spanValue = $("#slider-range-amount").text();
+
+            $.ajax({
+                url: "http://localhost:59157/Member/FiltreKeywordUrunleri",
+                type: "Get",
+                data: { fiyat: spanValue,categoryId:@Model.Item1.First().Category.ID },
+                success: function (gelenSayfa) {
+                    $("#OzelUrunler").html(gelenSayfa);
+                }
+            })
+        })
+        $("#txtSearch").keyup(function () {
+            var keyword = $("#txtSearch").val();
+            $.ajax({
+
+                url: "http://localhost:59157/Member/SearchProduct",
+                type: "Get",
+                data: { keyword: keyword },
+                success: function (donenVeri) {
+                    $("#OzelUrunler").html(donenVeri);
+                }
+            })
+        })
+    })
+</script>

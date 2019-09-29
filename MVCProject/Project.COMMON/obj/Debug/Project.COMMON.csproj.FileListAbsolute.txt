@@ -1,0 +1,12 @@
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.COMMON\bin\Debug\Project.COMMON.dll
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.COMMON\bin\Debug\Project.COMMON.pdb
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.COMMON\obj\Debug\Project.COMMON.csprojAssemblyReference.cache
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.COMMON\obj\Debug\Project.COMMON.csproj.CoreCompileInputs.cache
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.COMMON\obj\Debug\Project.COMMON.dll
+E:\Gruplar\YMS3421\MVC\05.26.2019\MVCProject\Project.COMMON\obj\Debug\Project.COMMON.pdb
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.COMMON\bin\Debug\Project.COMMON.dll
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.COMMON\bin\Debug\Project.COMMON.pdb
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.COMMON\obj\Debug\Project.COMMON.csprojAssemblyReference.cache
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.COMMON\obj\Debug\Project.COMMON.csproj.CoreCompileInputs.cache
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.COMMON\obj\Debug\Project.COMMON.dll
+E:\Gruplar\YMS3421\Project\06.22.2019\MVCProject\Project.COMMON\obj\Debug\Project.COMMON.pdb

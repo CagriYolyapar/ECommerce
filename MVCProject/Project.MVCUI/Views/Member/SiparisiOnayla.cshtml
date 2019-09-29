@@ -1,0 +1,69 @@
+﻿@model Tuple<Order,PaymentVM>
+@{
+    ViewBag.Title = "SiparisiOnayla";
+    Layout = "~/Areas/Admin/Views/Shared/_AdminLayout.cshtml";
+}
+
+<div class="panel-body">
+
+
+    <div class="form">
+        @using (Html.BeginForm("SiparisiOnayla", "Member", FormMethod.Post, new { @class = "cmxform form-horizontal tasi-form", enctype = "multipart/form-data" }))
+        {
+            <div class="form-group ">
+                <label for="firstname" class="control-label col-lg-2">Gonderim Adresi</label>
+                <div class="col-lg-6">
+                    @Html.TextBoxFor(x => x.Item1.ShippedAddress, new { @class = "form-control" })
+
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="lastname" class="control-label col-lg-2">Kart Numarası</label>
+                <div class="col-lg-6">
+                    @Html.TextBoxFor(x => x.Item2.Number, new { @class = "form-control" })
+
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="username" class="control-label col-lg-2">Kart Uzerindeki İsim</label>
+                <div class="col-lg-6">
+                    @Html.TextBoxFor(x => x.Item2.UserName, new { @class = "form-control" })
+
+                </div>
+            </div>
+            <div class="form-group ">
+                <label for="password" class="control-label col-lg-2">Son kullanım Tarihi(Ay)</label>
+                <div class="col-lg-6">
+                    @Html.TextBoxFor(x => x.Item2.ExpiryMonth, new { type = "number", @class = "form-control" })
+
+                </div>
+            </div>
+
+            <div class="form-group ">
+                <label for="password" class="control-label col-lg-2">Son kullanım Tarihi(Yıl)</label>
+                <div class="col-lg-6">
+                    @Html.TextBoxFor(x => x.Item2.ExpiryYear, new { type = "number", @class = "form-control" })
+
+                </div>
+            </div>
+
+
+
+
+
+
+
+
+            <div class="form-group">
+                <div class="col-lg-offset-2 col-lg-6">
+                    <button class="btn btn-danger" type="submit">Save</button>
+                    @Html.ActionLink("Cancel", "Index", "Member", null, new { @class = "btn btn-default" })
+
+                </div>
+            </div>
+
+
+        }
+    </div>
+</div>
+
